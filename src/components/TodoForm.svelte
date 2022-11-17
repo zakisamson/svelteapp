@@ -6,7 +6,7 @@
     const handleSubmit = () => {
         addTodo(todo)
         todo = ""
-        console.log("submit")
+        console.log(todo)
     }
 </script>
 

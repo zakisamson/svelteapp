@@ -16,6 +16,6 @@
 	<span class={`flex-1 text-gray-800 ${todo.completed ? 'line-through' : ''}`}>{todo.text}</span>
 	<button
 		class="text-small bg-red-500 hover:bg-red-600 text-white py-1 px-2 rounded focus:outline-none focus:shadow-out"
-		type="button"
-	/>
+		type="button" on:click={() => deleteTodo(todo.id)}
+	>Delete</button>
 </li>

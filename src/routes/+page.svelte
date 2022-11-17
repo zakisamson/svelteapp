@@ -8,7 +8,9 @@
         My Todo List
     </h1>
     <TodoForm />
-    {#each $todos as todo}
-        <Todo todo={todo} index={todo.id} />
-    {/each}
+    <ul>
+        {#each $todos as todo}
+            <Todo todo={todo} index={todo.id} />
+        {/each}
+    </ul>
 </main>
